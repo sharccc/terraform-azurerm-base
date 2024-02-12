@@ -24,13 +24,13 @@ variable "location" {
 
 variable "tag_owner" {
   description = "email address of the owner of the resources to include as tagging"
-  default     = "https://github.com/sharccc"
+  default     = "nobody@nowhere.com"
 }
 
 locals {
   tags = {
     owner = var.tag_owner
-    base  = "https://github.com/sharccc/terraform-z-base"
+    base  = "https://github.com/sharccc/terraform-azurerm-base"
   }
 }
 
